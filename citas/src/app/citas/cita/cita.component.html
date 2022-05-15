@@ -1,0 +1,29 @@
+<div class="example-container">
+    <mat-toolbar>
+        <span> MAESTRO DE CITA </span>
+    </mat-toolbar>
+    <mat-card>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Código" (ngModel)="citaentity.codigo">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                    <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Descripción" (ngModel)="citaentity.descripcion">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="example-full-width" mat-raised-button color="primary">Guardar</button>
+                </div><br>
+                <div class="col-md-6">
+                    <button class="example-full-width" mat-raised-button color="primary">Limpiar</button>
+                </div>
+            </div>
+          </form>
+    </mat-card>
+</div>
