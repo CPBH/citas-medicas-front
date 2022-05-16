@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { TipoCitaEntity } from 'src/app/entity/tipocita';
 
 @Component({
@@ -13,7 +12,7 @@ export class CitaComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
   limpiar(){
 

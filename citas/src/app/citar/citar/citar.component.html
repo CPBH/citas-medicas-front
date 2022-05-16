@@ -1,0 +1,16 @@
+<mat-toolbar>
+    <span>CITA MEDICA</span>
+</mat-toolbar>
+<mat-card>
+    <form>
+        <mat-form-field appearance="fill">
+            <mat-label>Tipo de cita</mat-label>
+            <select matNativeControl (ngModel)="selectedCar" name="car">
+            <option value="" selected></option>
+            <option *ngFor="let car of cars" [value]="car.value">
+            {{car.viewValue}}
+            </option>
+            </select>
+        </mat-form-field>
+    </form>
+</mat-card>
